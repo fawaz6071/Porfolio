@@ -245,8 +245,8 @@
   .services .section-head p{ color:rgba(255,255,255,0.55);}
   .services-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
   .service-card{
-    background:var(--navy-800); border-radius:var(--radius);
-    padding:32px 26px; border:1px solid rgba(255,255,255,0.06);
+    background:var#F1F2F4; border-radius:var(--radius);
+    padding:32px 26px; border:1px solid rgba(10,25,48,0.06);
     transition:transform .3s ease, border-color .3s ease;
   }
   .service-card:hover{ transform:translateY(-6px); border-color:var(--orange); }
@@ -256,13 +256,14 @@
   }
   .service-icon svg{ width:24px; height:24px; stroke:var(--orange); }
   .service-visual{
-    width:100%; height:130px; border-radius:10px; margin-bottom:20px;
-    background:var(--navy-800); position:relative; overflow:hidden;
-    display:flex; align-items:center; justify-content:center;
-  }
+  width:100%; height:130px; border-radius:10px; margin-bottom:20px;
+  background:#FFFFFF; position:relative; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+  border:1px solid rgba(10,25,48,0.08);
+   }
   .service-visual svg{ width:100%; height:100%; }
   .service-card h3{ font-size:1.15rem; font-weight:600; margin-bottom:10px; font-family:'Poppins',sans-serif;}
-  .service-card p{ font-size:0.9rem; color:rgba(255,255,255,0.55); line-height:1.6;}
+  .service-card p{ font-size:0.9rem; color:#000000;; line-height:1.6;}
 
   /* ABOUT */
   .about-grid{
@@ -622,12 +623,14 @@
       <div class="service-card reveal">
         <div class="service-visual">
           <svg viewBox="0 0 200 120">
-            <rect width="200" height="120" fill="#122A4A"/>
-            <rect x="30" y="20" width="90" height="60" rx="4" fill="#0A1930" stroke="#FF6A1F" stroke-width="2"/>
-            <rect x="45" y="35" width="90" height="60" rx="4" fill="#1C3A5E" stroke="#FFFFFF" stroke-width="1.5"/>
-            <circle cx="70" cy="58" r="10" fill="#FF6A1F"/>
-            <rect x="88" y="52" width="35" height="4" rx="2" fill="rgba(255,255,255,0.5)"/>
-            <rect x="88" y="62" width="25" height="4" rx="2" fill="rgba(255,255,255,0.3)"/>
+            <rect width="200" height="120" fill="#FFFFFF"/>
+           <circle cx="60" cy="60" r="30" fill="#FF6A1F"/>
+           <circle cx="60" cy="60" r="16" fill="#0D47A1"/>
+           <rect x="120" y="30" width="18" height="18" fill="#FF6A1F"/>
+           <rect x="145" y="30" width="18" height="18" fill="#C7CDD6"/>
+           <rect x="120" y="55" width="18" height="18" fill="#0D47A1"/>
+           <rect x="145" y="55" width="18" height="18" fill="#FF6A1F"/>
+           <rect x="120" y="80" width="43" height="6" rx="3" fill="#C7CDD6"/>      
           </svg>
         </div>
         <h3>Direction artistique</h3>
@@ -636,13 +639,12 @@
       <div class="service-card reveal">
         <div class="service-visual">
           <svg viewBox="0 0 200 120">
-            <rect width="200" height="120" fill="#122A4A"/>
-            <rect x="55" y="15" width="60" height="80" rx="3" fill="#0A1930" stroke="rgba(255,255,255,0.2)"/>
-            <rect x="65" y="15" width="60" height="80" rx="3" fill="#FFFFFF"/>
-            <rect x="72" y="26" width="46" height="6" rx="2" fill="#FF6A1F"/>
-            <rect x="72" y="38" width="46" height="3" rx="1.5" fill="#C7CDD6"/>
-            <rect x="72" y="46" width="36" height="3" rx="1.5" fill="#C7CDD6"/>
-            <rect x="72" y="60" width="46" height="24" rx="2" fill="#1C3A5E"/>
+            <rect width="200" height="120" fill="#FFFFFF"/>
+            <rect x="30" y="20" width="90" height="60" rx="4" fill="#EAECEF" stroke="#FF6A1F" stroke-width="2"/>
+            <rect x="45" y="35" width="90" height="60" rx="4" fill="#0D47A1" stroke="#0D47A1" stroke-width="1.5"/>
+            <circle cx="70" cy="58" r="10" fill="#FF6A1F"/>
+            <rect x="88" y="52" width="35" height="4" rx="2" fill="rgba(255,255,255,0.5)"/>
+            <rect x="88" y="62" width="25" height="4" rx="2" fill="rgba(255,255,255,0.3)"/>
           </svg>
         </div>
         <h3>Design print</h3>
@@ -651,11 +653,13 @@
       <div class="service-card reveal">
         <div class="service-visual">
           <svg viewBox="0 0 200 120">
-            <rect width="200" height="120" fill="#122A4A"/>
-            <rect x="65" y="35" width="70" height="55" rx="3" fill="#FF6A1F"/>
-            <rect x="65" y="35" width="70" height="18" fill="#0A1930" opacity="0.25"/>
-            <rect x="96" y="20" width="8" height="35" fill="#FFFFFF"/>
-            <path d="M65 40 L100 20 L135 40" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+            <rect width="200" height="120" fill="#FFFFFF"/>
+            <rect x="55" y="15" width="60" height="80" rx="3" fill="#0D47A1" stroke="#0D47A1"/>
+            <rect x="65" y="15" width="60" height="80" rx="3" fill="#FFFFFF" stroke="#EAECEF"/>
+            <rect x="72" y="26" width="46" height="6" rx="2" fill="#FF6A1F"/>
+            <rect x="72" y="38" width="46" height="3" rx="1.5" fill="#C7CDD6"/>
+            <rect x="72" y="46" width="36" height="3" rx="1.5" fill="#C7CDD6"/>
+            <rect x="72" y="60" width="46" height="24" rx="2" fill="#0D47A1"/>
           </svg>
         </div>
         <h3>Packaging</h3>
@@ -664,14 +668,11 @@
       <div class="service-card reveal">
         <div class="service-visual">
           <svg viewBox="0 0 200 120">
-            <rect width="200" height="120" fill="#122A4A"/>
-            <rect x="70" y="15" width="60" height="90" rx="8" fill="#0A1930" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
-            <rect x="78" y="27" width="44" height="60" rx="2" fill="#FFFFFF"/>
-            <rect x="83" y="33" width="15" height="15" fill="#FF6A1F"/>
-            <rect x="102" y="33" width="15" height="15" fill="#1C3A5E"/>
-            <rect x="83" y="52" width="15" height="15" fill="#1C3A5E"/>
-            <rect x="102" y="52" width="15" height="15" fill="#FF6A1F"/>
-            <rect x="83" y="71" width="34" height="8" rx="2" fill="#C7CDD6"/>
+            <rect width="200" height="120" fill="#FFFFFF"/>
+            <rect x="65" y="35" width="70" height="55" rx="3" fill="#FF6A1F"/>
+            <rect x="65" y="35" width="70" height="18" fill="#0D47A1" opacity="0.25"/>
+            <rect x="96" y="20" width="8" height="35" fill="#0D47A1"/>
+      <path d="M65 40 L100 20 L135 40" fill="none" stroke="#0D47A1" stroke-width="3"/>
           </svg>
         </div>
         <h3>Social Media Management</h3>
